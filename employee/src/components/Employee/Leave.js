@@ -37,7 +37,7 @@ const Leave = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:5000/applyleave', data);
+      const response = await axios.post('https://elms-sdp-project-backend.onrender.com/applyleave', data);
       console.log("Server Response:", response.data);
       setId('');
       setName('');

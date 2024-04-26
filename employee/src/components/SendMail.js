@@ -16,7 +16,7 @@ function SendMail() {
       message,
       subject
     }
-    const response = await axios.post("http://localhost:5000/api/sendMail", data)
+    const response = await axios.post("https://elms-sdp-project-backend.onrender.com/api/sendMail", data)
     .then(response =>{
       console.log(response)
     })

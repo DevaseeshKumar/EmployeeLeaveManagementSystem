@@ -9,7 +9,7 @@ const LeavesTaken = () => {
   useEffect(() => {
     const fetchLeaves = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/leavestaken');
+        const response = await axios.get('https://elms-sdp-project-backend.onrender.com/leavestaken');
         setLeaves(response.data);
         setError(''); // Reset error state on success
       } catch (err) {

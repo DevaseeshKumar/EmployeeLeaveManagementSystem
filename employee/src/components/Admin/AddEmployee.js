@@ -67,7 +67,7 @@ const AddEmployee = ({ handleSnackbarOpen }) => {
     };
 
     try {
-      const response = await axios.post('http://localhost:5000/addemployee', data);
+      const response = await axios.post('https://elms-sdp-project-backend.onrender.com/addemployee', data);
       console.log('Server Response:', response.data);
       setId('');
       setName('');

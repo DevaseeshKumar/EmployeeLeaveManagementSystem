@@ -9,7 +9,7 @@ const ViewEmployee = () => {
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/viewemployees');
+        const response = await axios.get('https://elms-sdp-project-backend.onrender.com/viewemployees');
         setEmployees(response.data);
       } catch (err) {
         console.error("Error fetching employees: ", err.message);
